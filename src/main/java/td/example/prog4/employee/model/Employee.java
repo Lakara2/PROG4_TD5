@@ -1,5 +1,6 @@
 package td.example.prog4.employee.model;
 
+import jakarta.persistence.Column;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -45,4 +46,7 @@ public class Employee implements Serializable {
 
     private List<Position> positions;
     private List<Phone> phones;
+    @Column(name = "end_to_end_id")
+    private String endToEndId;
+
 }

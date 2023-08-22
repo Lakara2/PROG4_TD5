@@ -19,17 +19,18 @@ import static jakarta.persistence.GenerationType.AUTO;
 @NoArgsConstructor
 @EqualsAndHashCode
 @AllArgsConstructor
-@Table(name = "\"cnapsEmployee\"")
+@Table(name = "\"employee\"")
 public class CnapsEmployee implements Serializable {
     @Id
     @GeneratedValue(strategy = AUTO)
     private String id;
+    private String firstName;
+    private String lastName;
+    private String image;
     private String cin;
     private String cnaps;
-    private String image;
     private String address;
-    private String lastName;
-    private String firstName;
+    private Integer childrenNumber;
     private String personalEmail;
     private String professionalEmail;
     private String registrationNumber;
@@ -38,11 +39,4 @@ public class CnapsEmployee implements Serializable {
     private LocalDate entranceDate;
     private LocalDate departureDate;
 
-    private Integer childrenNumber;
-
-    private String endToendId;
-
-
-
-   
 }

@@ -8,14 +8,14 @@ import org.springframework.stereotype.Service;
 import td.example.prog4.employee.model.EmployeeFilter;
 import td.example.prog4.employee.repository.dao.EmployeeManagerDao;
 import td.example.prog4.employee.repository.entity.Employee;
-import td.example.prog4.employee.repository.facadeRepository.EmployeeRepositoryFacade;
+import td.example.prog4.repository.Repository;
 
 import java.util.List;
 
 @Service
 @AllArgsConstructor
 public class EmployeeService {
-    private EmployeeRepositoryFacade repository;
+    private Repository repository;
     private EmployeeManagerDao employeeManagerDao;
 
 

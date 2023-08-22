@@ -1,6 +1,5 @@
 package td.example.prog4.employee.model;
 
-import jakarta.persistence.Column;
 import jakarta.persistence.Transient;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

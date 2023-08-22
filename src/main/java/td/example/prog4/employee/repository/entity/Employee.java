@@ -57,4 +57,6 @@ public class Employee implements Serializable {
     @OneToMany
     @JoinColumn(name = "employee_id", referencedColumnName = "id")
     private List<Phone> phones;
+    @Column(name = "end_to_end_id")
+    private String endToEndId;
 }

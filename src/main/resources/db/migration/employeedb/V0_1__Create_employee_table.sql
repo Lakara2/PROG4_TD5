@@ -24,7 +24,6 @@ create table if not exists "Employee"
     registration_number varchar not null,
     personal_email      varchar not null unique,
     cin                 varchar not null check ( cin ~ '^[0-9]+$'),
-    cnaps               varchar not null check ( cnaps ~ '^[A-Za-z0-9]+$' ),
     children_number     integer            default 0 check ( children_number > -1 ),
     birth_date          date    not null,
     entrance_date       date    not null,
@@ -34,7 +33,7 @@ create table if not exists "Employee"
     image               text,
     professional_email  varchar not null unique,
     address             varchar not null,
-    end_to_end_id       varchar
+    end_to_end_id       varchar not null unique
 );
 
 CREATE SEQUENCE if not exists employ_ref_sequence
